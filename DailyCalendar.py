@@ -1,11 +1,16 @@
 import webbrowser
 import datetime
+import sys
 from datetime import date
 from datetime import timedelta
 
+print( 'Number of arguments:', len(sys.argv), 'arguments.')
+print( 'Argument List:', str(sys.argv))
+
+
 today = date.today()
-if today.strftime("%A") == 'Monday':
-    satDate = date.today() -timedelta(days=3)
+if len(sys.argv) == 2:
+    satDate = date.today() -timedelta(days=int(sys.argv[1]))
     urlDate = satDate.strftime("%Y/%m/%d")
 
 else:
