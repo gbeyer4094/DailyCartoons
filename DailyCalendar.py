@@ -1,6 +1,5 @@
-import webbrowser
-import datetime
 import sys
+import webbrowser
 from datetime import date
 from datetime import timedelta
 
