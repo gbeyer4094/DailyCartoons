@@ -4,9 +4,8 @@ import sys
 from datetime import date
 from datetime import timedelta
 
-print( 'Number of arguments:', len(sys.argv), 'arguments.')
-print( 'Argument List:', str(sys.argv))
-
+#print( 'Number of arguments:', len(sys.argv), 'arguments.')
+#print( 'Argument List:', str(sys.argv))
 
 today = date.today()
 if len(sys.argv) == 2:
