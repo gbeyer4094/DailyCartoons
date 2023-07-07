@@ -89,7 +89,7 @@ my_set = {1, 2, 3, 4, 5}
 print("Set:", my_set)
 
 # Adding elements to a set
-my_set.add(6)
+my_set.add(6)git
 my_set.add(7)
 print("Set:", my_set)
 
