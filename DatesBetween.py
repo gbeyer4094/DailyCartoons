@@ -6,7 +6,7 @@ from tkinter import *
 from tkinter import messagebox
 
 
-def showdatedifference():
+def show_date_difference():
     delta = toCal.get_date() - fromCal.get_date()
     messagebox.showinfo("Date Difference", str(delta).split(' ')[0])
 
@@ -32,7 +32,7 @@ toCal = DateEntry(root, width=12, year=toDate.year, month=toDate.month, day=toDa
                   background='dark-blue', foreground='white', borderwidth=2)
 toCal.pack(padx=10, pady=10)
 
-select = Button(root, text="display Date Difference", command=showdatedifference)
+select = Button(root, text="display Date Difference", command=show_date_difference)
 select.pack(padx=10, pady=10)
 
 root.mainloop()

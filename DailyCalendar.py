@@ -9,7 +9,7 @@ if file_path.is_file():
     with open(file_path, 'r') as file:
         file_date = file.readline().strip()
         print('file_date:' + file_date)
-        file.close()
+
     if not file_date == '':
         date = datetime.strptime(file_date, "%Y-%m-%d")
         new_date = date + timedelta(days=1)
@@ -38,17 +38,15 @@ webbrowser.open("https://gocomics.com/luann/" + urlDate)
 webbrowser.open("https://gocomics.com/nonsequitur/" + urlDate)
 webbrowser.open("https://gocomics.com/peanuts/" + urlDate)
 webbrowser.open("https://gocomics.com/meaningoflila/" + urlDate)
-webbrowser.open("https://gocomics.com/bloom-county/" + urlDate)
 webbrowser.open("https://gocomics.com/fowl-language/" + urlDate)
 webbrowser.open("https://gocomics.com/foxtrot/" + urlDate)
 webbrowser.open("https://gocomics.com/lay-lines/" + urlDate)
 webbrowser.open("https://gocomics.com/pigborn/" + urlDate)
-webbrowser.open("https://gocomics.com/redmeat/" + urlDate)
 webbrowser.open("https://gocomics.com/sarahs-scribbles/" + urlDate)
 
 today = datetime.today()
 with open(file_path, 'w') as file:
     file.write(today.strftime("%Y-%m-%d"))
-    file.close()
+
 
 
